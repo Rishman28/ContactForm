@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Forms</title>
+    <style>
+        *{
+    box-sizing: border-box;
+}
+header {
+    padding: 25px;
+    background-color: rgba(240, 120, 9, 0.897);
+    border: 6px solid rgb(3, 1, 1);
+    border-radius: 8px;
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(49, 11, 11, 0.973);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+    background-image: url("img.jpg");
+}
+.main_head{
+    background-color: chartreuse;
+    border-radius: 6px;
+    margin: 10px;
+    border: 4px solid black;
+    
+}
+.main_head:hover{
+    background-color: aquamarine;
+}
+.container{
+    width: 100%;
+background-color: rgb(230, 208, 114);
+padding: 10px;
+border: 6px solid rgb(3, 1, 1);
+border-radius: 8px;
+}
+input[type="submit"]{
+    background-color: rgb(77, 72, 72);
+    color: white;
+    padding: 20px 20px;
+    border:3px solid  rgb(0, 0, 0) ;
+    border-radius: 30px ;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 5px ;
+}
+input[type="reset"]{
+    background-color: rgba(228, 78, 73, 0.849);
+    color: white;
+    padding: 20px 20px;
+    border:3px solid rgb(206, 0, 0) ;
+    border-radius: 30px ;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 5px ;
+}
+input[type="text"],
+input[type="email"],
+input[type="Phone"],
+input[type="Subject"],
+select,
+textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(207, 167, 167);
+    border-radius: 6px;
+    margin: 0.5px;
+}
+input[type="submit"]:hover{
+    background-color:  rgb(0, 0, 0);
+}
+input[type="reset"]:hover{
+    background-color: rgb(206, 0, 0);
+}
+.alex{
+    background-color: rgb(165, 202, 127);
+    width: 32%;
+    padding: auto;
+    border-radius: 6px;
+    margin: 10px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">   
+        <h1 class="main_head"><b><u>Contact Form</u></b></h1>
+        <hr>
+            <div class="alex">
+                <p><u><b>Note</b></u>:- <i>   
+            <br> Please fill all the texts in the Fields*......</i></p>
+            </div>
+            <form action="backend.php">
+                <label for="name"></label>
+            <div>
+       YourName: <input type="text" name="myName" id="name" placeholder="Enter your Name" required>
+            </div>
+            <br>
+    <div>
+       YourRole: <input type="text" name="myRole" placeholder="Enter your Role" required>
+    </div>
+    <br>
+     <div>
+        PhoneNo.: <input type="Phone" name="myPhone" placeholder="Enter your Phone No." required>
+     </div>
+     <div>
+    <div>
+       E-mail: <input type="email" name="myEmail" placeholder="Enter your E-mail" required>
+    </div>
+    <br>
+   <div>
+        Subject:  <input type="Subject" name="mySubject" placeholder="Enter your Subject" required>
+     </div>
+        Message:
+        <br>
+        <textarea name="myText"cols="30" rows="10" placeholder="Write Something..." ></textarea>
+    </div>
+    <br>
+    
+     <br>
+    <div>
+        <input type="submit" value="Submit Now">
+        <input type="reset" value="Reset Now">
+    </div>
+</div>
+</form>
+</header>
+</body>
+</html>
